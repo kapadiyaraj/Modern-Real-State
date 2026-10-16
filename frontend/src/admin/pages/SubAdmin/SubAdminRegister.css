@@ -1,0 +1,231 @@
+.subadmin-register-page {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 60px 20px 80px;
+  box-sizing: border-box;
+}
+
+.subadmin-register-container {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.subadmin-register-top {
+  margin-bottom: 35px;
+}
+
+.subadmin-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #14222a;
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.subadmin-back-link span {
+  width: 27px;
+  height: 27px;
+
+  border: 1px solid #18252c;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+}
+
+.subadmin-register-top h1 {
+  margin: 18px 0 8px;
+
+  color: #111d24;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.subadmin-register-top p {
+  margin: 0;
+
+  color: #737d82;
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.subadmin-register-box {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #555;
+
+  box-sizing: border-box;
+}
+
+.subadmin-register-heading {
+  padding: 17px 18px;
+
+  border-bottom: 1px solid #555;
+}
+
+.subadmin-register-heading h2 {
+  margin: 0;
+
+  color: #101e26;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.subadmin-register-content {
+  padding: 22px 18px 28px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.subadmin-two-columns {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+}
+
+.subadmin-field {
+  width: 100%;
+}
+
+.subadmin-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #14222a;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.subadmin-field label span {
+  color: red;
+}
+
+.subadmin-field input {
+  width: 100%;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #555;
+
+  outline: none;
+
+  padding: 0 14px;
+
+  background: #fff;
+
+  color: #15232b;
+
+  font-family: inherit;
+
+  font-size: 12px;
+}
+
+.subadmin-field input:focus {
+  border-color: #111d24;
+}
+
+.subadmin-role-info {
+  padding: 13px 14px;
+
+  background: #f5f7f8;
+
+  border: 1px solid #e2e6e8;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 12px;
+}
+
+.subadmin-role-info strong {
+  color: #17232a;
+}
+
+.subadmin-role-info span {
+  color: #66727a;
+  font-weight: 600;
+}
+
+.subadmin-register-action {
+  padding: 15px 18px;
+
+  border-top: 1px solid #555;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subadmin-register-action button {
+  min-width: 170px;
+  height: 40px;
+
+  border: 0;
+  border-radius: 22px;
+
+  background: #14232b;
+  color: #fff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.subadmin-register-action button:hover {
+  background: #0b151b;
+}
+
+.subadmin-register-action button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .subadmin-register-page {
+    padding: 35px 14px 50px;
+  }
+
+  .subadmin-register-top h1 {
+    font-size: 23px;
+  }
+
+  .subadmin-two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .subadmin-register-action {
+    padding: 14px;
+  }
+
+  .subadmin-register-action button {
+    width: 100%;
+  }
+}

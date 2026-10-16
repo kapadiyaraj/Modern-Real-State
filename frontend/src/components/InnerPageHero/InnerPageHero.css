@@ -1,0 +1,204 @@
+/* =========================================
+   INNER PAGE HERO - REUSABLE COMPONENT
+========================================= */
+
+.inner-page-hero {
+  position: relative;
+  width: 100%;
+  min-height: 310px;
+  background: #172129;
+  color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Decorative Blue Border Line */
+.inner-page-hero-line {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Main Container */
+.inner-page-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 90px 30px 65px;
+}
+
+/* Back Button */
+.inner-page-hero-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 0;
+  margin: 0 0 24px;
+
+  border: none;
+  background: transparent;
+
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+
+.inner-page-hero-back:hover {
+  opacity: 0.75;
+}
+
+/* Circle Arrow */
+.inner-page-hero-arrow {
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Content */
+.inner-page-hero-content {
+  max-width: 650px;
+}
+
+.inner-page-hero-content h1 {
+  margin: 0 0 12px;
+
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.inner-page-hero-content p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+  .inner-page-hero {
+    min-height: 290px;
+  }
+
+  .inner-page-hero-line {
+    height: 330px;
+  }
+
+  .inner-page-hero-container {
+    max-width: 900px;
+    padding: 85px 28px 60px;
+  }
+
+  .inner-page-hero-content {
+    max-width: 600px;
+  }
+
+  .inner-page-hero-content h1 {
+    font-size: 27px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .inner-page-hero {
+    min-height: 270px;
+  }
+
+  .inner-page-hero-line {
+    top: 0;
+    height: 300px;
+  }
+
+  .inner-page-hero-container {
+    padding: 75px 22px 50px;
+  }
+
+  .inner-page-hero-back {
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+
+  .inner-page-hero-arrow {
+    width: 26px;
+    height: 26px;
+    font-size: 15px;
+  }
+
+  .inner-page-hero-content {
+    max-width: 100%;
+  }
+
+  .inner-page-hero-content h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .inner-page-hero-content p {
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .inner-page-hero {
+    min-height: 260px;
+  }
+
+  .inner-page-hero-line {
+    height: 285px;
+  }
+
+  .inner-page-hero-container {
+    padding: 72px 18px 45px;
+  }
+
+  .inner-page-hero-back {
+    margin-bottom: 18px;
+  }
+
+  .inner-page-hero-content h1 {
+    font-size: 23px;
+  }
+
+  .inner-page-hero-content p {
+    font-size: 12.5px;
+  }
+}

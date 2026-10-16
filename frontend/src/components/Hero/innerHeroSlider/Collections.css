@@ -1,0 +1,164 @@
+.real-estate-collections-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 55px 20px 80px;
+  box-sizing: border-box;
+}
+
+.real-estate-collections-container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.real-estate-collections-title {
+  margin: 0 0 35px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #111b21;
+}
+
+.real-estate-collections-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 38px 26px;
+}
+
+.real-estate-collection-card {
+  width: 100%;
+  text-align: center;
+}
+
+.real-estate-collection-image-box {
+  width: 100%;
+  height: 235px;
+  overflow: hidden;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+.real-estate-collection-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.real-estate-collection-image-box:hover
+.real-estate-collection-image {
+  transform: scale(1.03);
+}
+
+.real-estate-collection-no-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.real-estate-collection-name {
+  margin: 14px 0 10px;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #111b21;
+  cursor: pointer;
+}
+
+.real-estate-collection-count {
+  border: none;
+  outline: none;
+
+  padding: 10px 17px;
+
+  border-radius: 25px;
+
+  background: #111d23;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.real-estate-collection-count:hover {
+  background: #293a42;
+  transform: translateY(-2px);
+}
+
+.real-estate-collections-loading {
+  text-align: center;
+  padding: 80px 0;
+  color: #555;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 900px) {
+  .real-estate-collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 22px;
+  }
+
+  .real-estate-collection-image-box {
+    height: 240px;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 600px) {
+  .real-estate-collections-page {
+    padding: 40px 16px 60px;
+  }
+
+  .real-estate-collections-title {
+    font-size: 27px;
+    margin-bottom: 28px;
+  }
+
+  .real-estate-collections-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .real-estate-collection-image-box {
+    height: 240px;
+  }
+
+  .real-estate-collection-name {
+    font-size: 18px;
+  }
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width: 400px) {
+  .real-estate-collections-page {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .real-estate-collection-image-box {
+    height: 215px;
+  }
+}

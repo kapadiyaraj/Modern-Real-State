@@ -1,0 +1,480 @@
+/* =========================================
+   SUB ADMIN DASHBOARD
+========================================= */
+
+.subadmin-dashboard-page {
+  min-height: 100vh;
+
+  background: #f5f7f9;
+
+  color: #17232a;
+
+  padding: 40px 35px 70px;
+
+  box-sizing: border-box;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.subadmin-dashboard-header {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto 30px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+.subadmin-dashboard-header > div {
+  flex: 1;
+}
+
+.subadmin-dashboard-header span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9aa4a9;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+}
+
+.subadmin-dashboard-header h1 {
+  margin: 0;
+
+  color: #17232a;
+
+  font-size: 28px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.subadmin-dashboard-header p {
+  margin: 8px 0 0;
+
+  color: #7d898f;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.subadmin-logout {
+  border: 1px solid #e0e4e6;
+
+  background: #ffffff;
+
+  color: #17232a;
+
+  padding: 10px 17px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.subadmin-logout:hover {
+  background: #17232a;
+
+  color: #ffffff;
+
+  border-color: #17232a;
+}
+
+/* =========================================
+   DASHBOARD GRID
+========================================= */
+
+.subadmin-dashboard-grid {
+  width: 100%;
+
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.subadmin-dashboard-card {
+  min-height: 220px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e6e8;
+
+  border-radius: 9px;
+
+  padding: 22px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.subadmin-dashboard-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 25px
+    rgba(23, 35, 42, 0.06);
+}
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.subadmin-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.subadmin-card-top > span {
+  color: #9aa4a9;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.1px;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.subadmin-card-top strong {
+  padding: 5px 10px;
+
+  border-radius: 15px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: capitalize;
+}
+
+.status-approved {
+  background: #eaf8ef;
+
+  color: #238247;
+}
+
+.status-pending {
+  background: #fff6df;
+
+  color: #a66b00;
+}
+
+.status-rejected {
+  background: #fff0ef;
+
+  color: #c34f46;
+}
+
+.status-not_submitted {
+  background: #eef1f3;
+
+  color: #65727a;
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.subadmin-dashboard-card h2 {
+  margin: 0 0 9px;
+
+  color: #17232a;
+
+  font-size: 18px;
+
+  font-weight: 750;
+}
+
+.subadmin-dashboard-card p {
+  margin: 0;
+
+  max-width: 440px;
+
+  color: #7b878d;
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.subadmin-dashboard-card > button {
+  align-self: flex-start;
+
+  margin-top: auto;
+
+  min-width: 145px;
+
+  height: 38px;
+
+  padding: 0 15px;
+
+  border: 0;
+
+  border-radius: 20px;
+
+  background: #17232a;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  transition: 0.2s ease;
+}
+
+.subadmin-dashboard-card > button:hover {
+  background: #0b151b;
+}
+
+.subadmin-dashboard-card > button span {
+  font-size: 15px;
+
+  line-height: 1;
+}
+
+/* =========================================
+   MULTIPLE ACTIONS
+========================================= */
+
+.subadmin-card-actions {
+  margin-top: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.subadmin-card-actions button {
+  min-width: 135px;
+
+  height: 38px;
+
+  padding: 0 14px;
+
+  border-radius: 20px;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  transition: 0.2s ease;
+}
+
+/* First */
+
+.subadmin-card-actions button:first-child {
+  border: 1px solid #dce1e3;
+
+  background: #ffffff;
+
+  color: #17232a;
+}
+
+.subadmin-card-actions button:first-child:hover {
+  background: #f3f5f6;
+}
+
+/* Second */
+
+.subadmin-card-actions button:last-child {
+  border: 0;
+
+  background: #17232a;
+
+  color: #ffffff;
+}
+
+.subadmin-card-actions button:last-child:hover {
+  background: #0b151b;
+}
+
+.subadmin-card-actions button span {
+  font-size: 14px;
+
+  line-height: 1;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+  .subadmin-dashboard-page {
+    padding: 30px 20px 55px;
+  }
+
+  .subadmin-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subadmin-dashboard-card {
+    min-height: 200px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .subadmin-dashboard-page {
+    padding: 22px 13px 45px;
+  }
+
+  .subadmin-dashboard-header {
+    flex-direction: column;
+
+    margin-bottom: 22px;
+
+    gap: 17px;
+  }
+
+  .subadmin-dashboard-header h1 {
+    font-size: 23px;
+  }
+
+  .subadmin-dashboard-header p {
+    font-size: 11px;
+  }
+
+  .subadmin-logout {
+    align-self: flex-start;
+
+    padding: 9px 15px;
+  }
+
+  .subadmin-dashboard-grid {
+    gap: 14px;
+  }
+
+  .subadmin-dashboard-card {
+    min-height: 210px;
+
+    padding: 18px;
+
+    border-radius: 8px;
+  }
+
+  .subadmin-card-top {
+    margin-bottom: 22px;
+  }
+
+  .subadmin-dashboard-card h2 {
+    font-size: 16px;
+  }
+
+  .subadmin-dashboard-card p {
+    font-size: 10px;
+  }
+
+  .subadmin-card-actions {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .subadmin-card-actions button {
+    width: 100%;
+  }
+
+  .subadmin-dashboard-card > button {
+    width: 100%;
+  }
+}

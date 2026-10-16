@@ -1,0 +1,266 @@
+.admin-contact-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #f7f7f7;
+}
+
+/* Header */
+.admin-contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.admin-contact-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #16232b;
+}
+
+.admin-contact-header span {
+  padding: 8px 15px;
+  border: 1px solid #16232b;
+  font-size: 14px;
+  color: #16232b;
+}
+
+/* Table */
+.admin-contact-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.admin-contact-table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+}
+
+.admin-contact-table th {
+  background: #16232b;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.admin-contact-table td {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #222;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.admin-contact-table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* Message */
+.contact-message-preview {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Actions */
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-view-btn,
+.contact-delete-btn {
+  border: none;
+  padding: 9px 15px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.contact-view-btn {
+  background: #16232b;
+  color: #fff;
+}
+
+.contact-view-btn:hover {
+  background: #283a44;
+}
+
+.contact-delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.contact-delete-btn:hover {
+  background: #b92737;
+}
+
+/* Empty */
+.admin-contact-empty {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.admin-contact-empty h3 {
+  margin: 0 0 10px;
+  color: #16232b;
+  font-size: 22px;
+}
+
+.admin-contact-empty p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Modal */
+.contact-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.contact-modal {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+
+  background: #fff;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.contact-modal h3 {
+  margin: 0 0 25px;
+  color: #16232b;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.contact-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  border: none;
+  background: transparent;
+
+  font-size: 30px;
+  line-height: 1;
+  color: #16232b;
+
+  cursor: pointer;
+}
+
+.contact-modal-close:hover {
+  color: #dc3545;
+}
+
+/* Contact Details */
+.contact-detail {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.contact-detail:last-child {
+  border-bottom: none;
+}
+
+.contact-detail strong {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #16232b;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact-detail span {
+  display: block;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.contact-detail p {
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .admin-contact-page {
+    padding: 25px 20px;
+  }
+
+  .admin-contact-header h2 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .admin-contact-page {
+    padding: 20px 15px;
+  }
+
+  .admin-contact-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .admin-contact-header h2 {
+    font-size: 22px;
+  }
+
+  .admin-contact-header span {
+    font-size: 13px;
+  }
+
+  .admin-contact-table th,
+  .admin-contact-table td {
+    padding: 12px;
+  }
+
+  .contact-modal-overlay {
+    padding: 15px;
+  }
+
+  .contact-modal {
+    padding: 28px 20px;
+  }
+
+  .contact-modal h3 {
+    font-size: 21px;
+  }
+}

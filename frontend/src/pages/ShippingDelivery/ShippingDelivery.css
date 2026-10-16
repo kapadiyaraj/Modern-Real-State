@@ -1,0 +1,172 @@
+.shipping-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* =========================
+   SHIPPING SECTION
+========================= */
+
+.shipping-section {
+  width: 100%;
+  padding: 70px 20px 90px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.shipping-container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Main Heading */
+
+.shipping-container > h2 {
+  margin: 0 0 25px;
+
+  color: #10202b;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Paragraph */
+
+.shipping-container p {
+  margin: 0 0 5px;
+
+  color: #10202b;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/* Heading */
+
+.shipping-container h3 {
+  margin: 22px 0 10px;
+
+  color: #10202b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* Lists */
+
+.shipping-container ul {
+  margin: 5px 0 12px;
+  padding-left: 18px;
+}
+
+.shipping-container li {
+  margin: 0 0 4px;
+
+  color: #10202b;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+/* Individual Sections */
+
+.shipping-block {
+  margin-top: 30px;
+}
+
+.shipping-block h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .shipping-section {
+    padding: 60px 30px 80px;
+  }
+
+  .shipping-container {
+    max-width: 900px;
+  }
+
+  .shipping-container > h2 {
+    font-size: 26px;
+  }
+
+  .shipping-container p,
+  .shipping-container li {
+    font-size: 12px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .shipping-section {
+    padding: 50px 20px 65px;
+  }
+
+  .shipping-container {
+    max-width: 100%;
+  }
+
+  .shipping-container > h2 {
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+
+  .shipping-container h3 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .shipping-container p,
+  .shipping-container li {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .shipping-block {
+    margin-top: 26px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .shipping-section {
+    padding: 40px 15px 55px;
+  }
+
+  .shipping-container > h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .shipping-container h3 {
+    font-size: 14px;
+  }
+
+  .shipping-container p,
+  .shipping-container li {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .shipping-container ul {
+    padding-left: 17px;
+  }
+
+  .shipping-block {
+    margin-top: 24px;
+  }
+}

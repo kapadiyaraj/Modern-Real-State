@@ -1,0 +1,508 @@
+/* =========================================================
+   ACCOUNT PAGE
+========================================================= */
+
+.account-page {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  background: #ffffff;
+  padding: 64px 20px 80px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.account-top {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto 40px;
+}
+
+.back-to-shop {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #14222a;
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.back-to-shop span {
+  width: 27px;
+  height: 27px;
+
+  border: 1px solid #18252c;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+}
+
+.back-to-shop:hover {
+  opacity: 0.7;
+}
+
+.account-top h1 {
+  margin: 17px 0 0;
+
+  color: #111d24;
+
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* =========================================================
+   MAIN BOX
+========================================================= */
+
+.account-box {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  background: #fff;
+
+  border: 1px solid #555;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   BOX HEADING
+========================================================= */
+
+.account-box-heading {
+  width: 100%;
+
+  padding: 17px 18px;
+
+  box-sizing: border-box;
+
+  border-bottom: 1px solid #555;
+}
+
+.account-box-heading h2 {
+  margin: 0;
+
+  color: #101e26;
+
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.account-box-heading strong {
+  font-weight: 700;
+}
+
+/* =========================================================
+   FORM CONTENT
+========================================================= */
+
+.account-form-content {
+  padding: 20px 18px 28px;
+  box-sizing: border-box;
+}
+
+.returning-customer {
+  margin: 0 0 18px;
+
+  color: #17242c;
+
+  font-size: 13px;
+}
+
+/* =========================================================
+   TWO COLUMNS
+========================================================= */
+
+.account-two-columns {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+}
+
+/* =========================================================
+   FIELD
+========================================================= */
+
+.account-field {
+  width: 100%;
+}
+
+.account-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #14222a;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.account-field label span {
+  color: #ff0000;
+}
+
+.account-field input {
+  width: 100%;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #555;
+
+  border-radius: 0;
+
+  outline: none;
+
+  padding: 0 14px;
+
+  color: #15232b;
+
+  background: #fff;
+
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.account-field input::placeholder {
+  color: #18252c;
+  opacity: 1;
+}
+
+.account-field input:focus {
+  border-color: #111d24;
+}
+
+/* =========================================================
+   FULL FIELD
+========================================================= */
+
+.account-full-field {
+  margin-top: 16px;
+}
+
+/* =========================================================
+   LOGIN ACTION
+========================================================= */
+
+.account-action-row {
+  min-height: 70px;
+
+  padding: 14px 18px;
+
+  box-sizing: border-box;
+
+  border-top: 1px solid #555;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 14px;
+}
+
+.forgot-password {
+  color: #ff0000;
+
+  font-size: 12px;
+
+  text-decoration: underline;
+}
+
+.forgot-password:hover {
+  opacity: 0.7;
+}
+
+/* =========================================================
+   DARK BUTTON
+========================================================= */
+
+.account-dark-btn {
+  min-width: 137px;
+  height: 40px;
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 22px;
+
+  background: #14232b;
+
+  color: #fff;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.account-dark-btn span {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.account-dark-btn:hover {
+  background: #0b151b;
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   REGISTER ROW
+========================================================= */
+
+.account-register-row {
+  min-height: 66px;
+
+  padding: 12px 18px;
+
+  box-sizing: border-box;
+
+  border-top: 1px solid #555;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.account-register-row > span {
+  color: #17242c;
+  font-size: 11px;
+}
+
+.account-register-btn {
+  min-width: 86px;
+  height: 35px;
+
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  border-radius: 20px;
+
+  background: #ffe2d3;
+
+  color: #17242c;
+
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.account-register-btn span {
+  font-size: 14px;
+}
+
+.account-register-btn:hover {
+  background: #ffd4c0;
+}
+
+/* =========================================================
+   REGISTER
+========================================================= */
+
+.register-section {
+  width: 100%;
+}
+
+.register-submit-row {
+  min-height: 70px;
+
+  padding: 15px 18px;
+
+  box-sizing: border-box;
+
+  border-top: 1px solid #555;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+  .account-page {
+    padding: 45px 18px 60px;
+  }
+
+  .account-top {
+    margin-bottom: 30px;
+  }
+
+  .account-top h1 {
+    font-size: 25px;
+  }
+
+  .account-box {
+    width: 100%;
+  }
+
+  .account-form-content {
+    padding: 18px 16px 24px;
+  }
+
+  .account-two-columns {
+    gap: 12px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .account-page {
+    padding: 30px 14px 50px;
+  }
+
+  .account-top {
+    margin-bottom: 25px;
+  }
+
+  .back-to-shop {
+    font-size: 11px;
+  }
+
+  .back-to-shop span {
+    width: 25px;
+    height: 25px;
+  }
+
+  .account-top h1 {
+    margin-top: 14px;
+    font-size: 23px;
+  }
+
+  .account-box-heading {
+    padding: 15px 14px;
+  }
+
+  .account-box-heading h2 {
+    font-size: 12px;
+  }
+
+  .account-form-content {
+    padding: 17px 14px 22px;
+  }
+
+  .account-two-columns {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .account-full-field {
+    margin-top: 16px;
+  }
+
+  .account-field input {
+    height: 43px;
+  }
+
+  /* LOGIN BUTTON AREA */
+  .account-action-row {
+    padding: 14px;
+    min-height: auto;
+
+    flex-direction: column-reverse;
+    align-items: stretch;
+
+    gap: 12px;
+  }
+
+  .account-dark-btn {
+    width: 100%;
+    height: 43px;
+  }
+
+  .forgot-password {
+    align-self: flex-end;
+  }
+
+  /* REGISTER BOTTOM */
+  .account-register-row {
+    padding: 14px;
+    min-height: auto;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+  }
+
+  .account-register-btn {
+    height: 36px;
+  }
+
+  /* CREATE */
+  .register-submit-row {
+    padding: 14px;
+  }
+
+  .register-submit-row .account-dark-btn {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .account-page {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .account-top h1 {
+    font-size: 21px;
+  }
+
+  .account-box-heading {
+    padding: 14px 12px;
+  }
+
+  .account-form-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .account-action-row,
+  .register-submit-row {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

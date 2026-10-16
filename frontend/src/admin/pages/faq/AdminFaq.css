@@ -1,0 +1,283 @@
+.admin-faq-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #f7f7f7;
+}
+
+.admin-faq-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.admin-faq-header h1 {
+  margin: 0;
+  color: #16232b;
+  font-size: 28px;
+}
+
+.admin-faq-header span {
+  padding: 8px 15px;
+  border: 1px solid #16232b;
+  color: #16232b;
+  font-size: 13px;
+}
+
+/* CARD */
+
+.admin-faq-card {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 25px;
+  box-sizing: border-box;
+
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.admin-faq-card h2 {
+  margin: 0 0 22px;
+  color: #16232b;
+  font-size: 21px;
+}
+
+/* FORM */
+
+.admin-faq-form-group {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.admin-faq-form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #16232b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-faq-form-group input,
+.admin-faq-form-group textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+
+  border: 1px solid #aaa;
+  outline: none;
+
+  background: #fff;
+  color: #16232b;
+
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.admin-faq-form-group input {
+  height: 42px;
+}
+
+.admin-faq-form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.admin-faq-form-group input:focus,
+.admin-faq-form-group textarea:focus {
+  border-color: #16232b;
+}
+
+/* BUTTONS */
+
+.admin-faq-form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-faq-save-btn,
+.admin-faq-cancel-btn {
+  border: none;
+  padding: 11px 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.admin-faq-save-btn {
+  background: #16232b;
+  color: #fff;
+}
+
+.admin-faq-save-btn:hover {
+  background: #283a44;
+}
+
+.admin-faq-cancel-btn {
+  background: #ddd;
+  color: #222;
+}
+
+/* LIST */
+
+.admin-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-faq-item {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  gap: 15px;
+  align-items: start;
+
+  padding: 18px;
+
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.admin-faq-number {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #16232b;
+  color: #fff;
+
+  font-size: 13px;
+}
+
+.admin-faq-content h3 {
+  margin: 0 0 8px;
+  color: #16232b;
+  font-size: 15px;
+}
+
+.admin-faq-content p {
+  margin: 0;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.admin-faq-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-faq-edit-btn,
+.admin-faq-delete-btn {
+  border: none;
+  padding: 8px 13px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.admin-faq-edit-btn {
+  background: #16232b;
+  color: #fff;
+}
+
+.admin-faq-delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.admin-faq-empty {
+  padding: 40px;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #777;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .admin-faq-page {
+    padding: 25px 20px;
+  }
+
+  .admin-faq-header h1 {
+    font-size: 24px;
+  }
+
+  .admin-faq-item {
+    grid-template-columns: 35px 1fr;
+  }
+
+  .admin-faq-actions {
+    grid-column: 2;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .admin-faq-page {
+    padding: 20px 15px;
+  }
+
+  .admin-faq-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .admin-faq-header h1 {
+    font-size: 22px;
+  }
+
+  .admin-faq-card {
+    padding: 18px;
+  }
+
+  .admin-faq-card h2 {
+    font-size: 19px;
+  }
+
+  .admin-faq-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .admin-faq-number {
+    width: 30px;
+    height: 30px;
+  }
+
+  .admin-faq-actions {
+    grid-column: auto;
+  }
+
+  .admin-faq-edit-btn,
+  .admin-faq-delete-btn {
+    flex: 1;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+  .admin-faq-page {
+    padding: 15px 10px;
+  }
+
+  .admin-faq-card {
+    padding: 15px;
+  }
+
+  .admin-faq-form-actions {
+    flex-direction: column;
+  }
+
+  .admin-faq-save-btn,
+  .admin-faq-cancel-btn {
+    width: 100%;
+  }
+}

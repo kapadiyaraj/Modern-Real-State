@@ -1,0 +1,651 @@
+/* =========================================
+   BEACHFRONT SECTION
+========================================= */
+
+.beachfront-section {
+  width: 100%;
+  min-height: 760px;
+  background: linear-gradient(
+    to bottom,
+    #142129 0%,
+    #142129 55%,
+    #b4876d 55%,
+    #b4876d 100%
+  );
+  color: #fff0e7;
+  overflow: hidden;
+}
+
+.beachfront-container {
+  width: min(1280px, calc(100% - 80px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 28px;
+
+  position: relative;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.beachfront-left {
+  width: 100%;
+  min-width: 0;
+  padding-top: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.beachfront-heading {
+  margin: 0 0 28px;
+}
+
+.beachfront-heading span,
+.beachfront-heading h2 {
+  display: block;
+  margin: 0;
+
+  color: #fff0e7;
+  font-weight: 700;
+
+  font-size: clamp(55px, 6vw, 82px);
+  line-height: 0.94;
+  letter-spacing: -3px;
+}
+
+.beachfront-heading h2 {
+  margin-top: 5px;
+}
+
+.beachfront-description {
+  width: 100%;
+  max-width: 680px;
+
+  margin: 0 0 32px;
+
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.beachfront-cards {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.beachfront-card {
+  width: 100%;
+  min-width: 0;
+}
+
+.beachfront-card-image {
+  width: 100%;
+  height: 205px;
+
+  overflow: hidden;
+
+  border: 1.5px solid #fff0e7;
+  border-radius: 13px;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 82%,
+    82% 100%,
+    0 100%
+  );
+}
+
+.beachfront-card-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.35s ease;
+}
+
+.beachfront-card:hover .beachfront-card-image img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================
+   CARD TITLE + ARROW
+========================================= */
+
+.beachfront-card-info {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 13px;
+}
+
+.beachfront-card-info h3 {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.beachfront-card-info span {
+  flex-shrink: 0;
+
+  font-size: 29px;
+  line-height: 1;
+}
+
+
+/* =========================================
+   SLIDER ARROWS
+========================================= */
+
+.beachfront-controls {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.beachfront-controls button {
+  width: 38px;
+  height: 28px;
+
+  flex: 0 0 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #fff0e7;
+  border-radius: 50px;
+
+  background: transparent;
+  color: #fff0e7;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.beachfront-controls button:hover {
+  background: #fff0e7;
+  color: #142129;
+}
+
+.beachfront-line {
+  flex: 1;
+  min-width: 0;
+
+  height: 1px;
+
+  background: rgba(255, 240, 231, 0.7);
+}
+
+
+/* =========================================
+   RIGHT FEATURE IMAGE
+========================================= */
+
+.beachfront-right {
+  width: 100%;
+  min-width: 0;
+
+  padding-top: 220px;
+
+  position: relative;
+  z-index: 3;
+}
+
+.beachfront-feature-image {
+  width: 100%;
+  height: 380px;
+
+  overflow: hidden;
+
+  border-radius: 13px;
+}
+
+.beachfront-feature-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.beachfront-right > p {
+  width: 100%;
+  max-width: 600px;
+
+  margin: 22px 0 0;
+
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   1200px
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .beachfront-container {
+    width: calc(100% - 60px);
+    gap: 24px;
+  }
+
+  .beachfront-heading span,
+  .beachfront-heading h2 {
+    font-size: 62px;
+    letter-spacing: -2.5px;
+  }
+
+  .beachfront-cards {
+    gap: 18px;
+  }
+
+  .beachfront-card-image {
+    height: 200px;
+  }
+
+  .beachfront-card-info h3 {
+    font-size: 18px;
+  }
+
+  .beachfront-right {
+    padding-top: 210px;
+  }
+
+  .beachfront-feature-image {
+    height: 350px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .beachfront-section {
+    min-height: auto;
+
+    background: linear-gradient(
+      to bottom,
+      #142129 0%,
+      #142129 38%,
+      #b4876d 38%,
+      #b4876d 100%
+    );
+  }
+
+  .beachfront-container {
+    width: calc(100% - 42px);
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 22px;
+  }
+
+  .beachfront-left {
+    padding-top: 20px;
+  }
+
+  .beachfront-heading span,
+  .beachfront-heading h2 {
+    font-size: 48px;
+    line-height: 0.98;
+  }
+
+  .beachfront-description {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .beachfront-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .beachfront-card:nth-child(3) {
+    display: none;
+  }
+
+  .beachfront-card-image {
+    height: 245px;
+  }
+
+  .beachfront-card-info h3 {
+    font-size: 18px;
+  }
+
+  .beachfront-right {
+    padding-top: 150px;
+  }
+
+  .beachfront-feature-image {
+    width: 100%;
+    height: 360px;
+  }
+
+  .beachfront-right > p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+  .beachfront-section {
+    min-height: auto;
+
+    background: linear-gradient(
+      to bottom,
+      #142129 0%,
+      #142129 32%,
+      #b4876d 32%,
+      #b4876d 100%
+    );
+  }
+
+  .beachfront-container {
+
+    width: calc(100% - 28px);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+
+  /* -------------------------
+     LEFT
+  ------------------------- */
+
+  .beachfront-left {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .beachfront-heading {
+    margin-bottom: 18px;
+  }
+
+  .beachfront-heading span {
+    font-size: 40px;
+    letter-spacing: -1.8px;
+    line-height: 1;
+  }
+
+  .beachfront-heading h2 {
+    font-size: 40px;
+    letter-spacing: -1.8px;
+    line-height: 1;
+  }
+
+  .beachfront-description {
+    max-width: 100%;
+
+    margin-bottom: 24px;
+
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+  /* -------------------------
+     MOBILE CARDS
+  ------------------------- */
+
+  .beachfront-cards {
+
+    width: 100%;
+
+    display: flex;
+
+    gap: 14px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    padding: 0 0 5px;
+  }
+
+  .beachfront-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .beachfront-card {
+
+    flex: 0 0 calc(100% - 35px);
+
+    width: calc(100% - 35px);
+
+    min-width: calc(100% - 35px);
+
+    scroll-snap-align: start;
+  }
+
+  /* IMPORTANT:
+     Arrow click thi image size change nahi thase
+  */
+
+  .beachfront-card-image {
+
+    width: 100%;
+    height: 300px;
+
+    flex-shrink: 0;
+  }
+
+  .beachfront-card-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  .beachfront-card-info {
+
+    width: 100%;
+
+    margin-top: 13px;
+  }
+
+  .beachfront-card-info h3 {
+    font-size: 21px;
+  }
+
+  .beachfront-card-info span {
+    font-size: 29px;
+  }
+
+
+  /* -------------------------
+     ARROWS
+  ------------------------- */
+
+  .beachfront-controls {
+
+    width: 100%;
+
+    display: flex;
+
+    margin-top: 16px;
+  }
+
+  .beachfront-controls button {
+
+    width: 44px;
+    height: 32px;
+
+    flex: 0 0 44px;
+
+    font-size: 18px;
+  }
+
+
+  /* -------------------------
+     RIGHT IMAGE
+     NEVER HIDE
+  ------------------------- */
+
+  .beachfront-right {
+
+    display: block !important;
+
+    visibility: visible !important;
+
+    width: 100%;
+    min-width: 100%;
+
+    padding-top: 0;
+
+    margin-top: 0;
+  }
+
+  .beachfront-feature-image {
+
+    display: block;
+
+    width: 100%;
+    height: 330px;
+
+    overflow: hidden;
+
+    border-radius: 11px;
+  }
+
+  .beachfront-feature-image img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .beachfront-right > p {
+
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 20px 0 35px;
+
+    font-size: 14px;
+    line-height: 1.55;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE - 425px
+========================================= */
+
+@media (max-width: 425px) {
+
+  .beachfront-container {
+    width: calc(100% - 24px);
+  }
+
+  .beachfront-heading span {
+    font-size: 37px;
+  }
+
+  .beachfront-heading h2 {
+    font-size: 37px;
+  }
+
+  .beachfront-description {
+    font-size: 13.5px;
+  }
+
+  .beachfront-card {
+
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .beachfront-card-image {
+    height: 300px;
+  }
+
+  .beachfront-feature-image {
+    height: 300px;
+  }
+
+  .beachfront-right > p {
+    font-size: 13.5px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+  .beachfront-heading span,
+  .beachfront-heading h2 {
+    font-size: 34px;
+  }
+
+  .beachfront-card-image {
+    height: 275px;
+  }
+
+  .beachfront-feature-image {
+    height: 280px;
+  }
+}

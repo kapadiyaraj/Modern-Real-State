@@ -1,0 +1,676 @@
+/* =====================================================
+   FIND YOUR IDEAL SPACE
+===================================================== */
+
+.ideal-space-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: #10242b;
+
+  overflow: hidden;
+}
+
+.ideal-space-container {
+  position: relative;
+
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =====================================================
+   TOP CONTENT
+===================================================== */
+
+.ideal-space-top {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 46% 54%;
+
+  margin: 0;
+  padding: 58px 0 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.ideal-space-title {
+  margin: 0;
+  padding: 0 0 0 22%;
+
+  box-sizing: border-box;
+}
+
+.ideal-space-title h2 {
+  margin: 0;
+  padding: 0;
+
+  color: #ffe4d2;
+
+  font-size: 34px;
+  font-weight: 700;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.ideal-space-description {
+  margin: 0;
+  padding: 13px 7% 25px 0;
+
+  box-sizing: border-box;
+
+  background: #10242b;
+}
+
+.ideal-space-description p {
+  max-width: 720px;
+
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.48;
+}
+
+
+/* =====================================================
+   MAIN IMAGE
+===================================================== */
+
+.ideal-space-image {
+  position: relative;
+
+  width: 100%;
+  height: 595px;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.ideal-space-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =====================================================
+   NEWSLETTER CARD
+===================================================== */
+
+.ideal-space-newsletter {
+  position: absolute;
+
+  z-index: 5;
+
+  right: 6%;
+  bottom: 0;
+
+  width: 48%;
+
+  margin: 0;
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  background: #10242b;
+
+  border-radius: 10px 0 0 0;
+}
+
+.ideal-space-newsletter h3 {
+  margin: 0 0 13px;
+  padding: 0;
+
+  color: #ffe4d2;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.3px;
+}
+
+.ideal-space-newsletter p {
+  margin: 0 0 19px;
+  padding: 0;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   EMAIL FORM
+===================================================== */
+
+.ideal-space-form {
+  width: 100%;
+
+  display: flex;
+  align-items: stretch;
+
+  margin: 0;
+  padding: 0;
+
+  border: 1px solid #ffe4d2;
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.ideal-space-form input {
+  flex: 1;
+
+  min-width: 0;
+
+  width: 100%;
+  height: 40px;
+
+  margin: 0;
+  padding: 0 13px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 10px;
+
+  box-sizing: border-box;
+}
+
+.ideal-space-form input::placeholder {
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.ideal-space-form button {
+  flex: 0 0 96px;
+
+  height: 40px;
+
+  margin: 0;
+  padding: 0 10px;
+
+  border: none;
+
+  background: #ffe4d2;
+  color: #10242b;
+
+  font-family: inherit;
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.ideal-space-form button span {
+  margin-left: 6px;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1401px) {
+
+  .ideal-space-top {
+    grid-template-columns: 46% 54%;
+
+    padding-top: 60px;
+  }
+
+  .ideal-space-title {
+    padding-left: 22%;
+  }
+
+  .ideal-space-title h2 {
+    font-size: 35px;
+  }
+
+  .ideal-space-description {
+    padding-top: 14px;
+    padding-right: 7%;
+  }
+
+  .ideal-space-description p {
+    font-size: 13px;
+  }
+
+  .ideal-space-image {
+    height: 595px;
+  }
+
+  .ideal-space-newsletter {
+    right: 6%;
+    width: 48%;
+
+    padding: 30px;
+  }
+
+  .ideal-space-newsletter h3 {
+    font-size: 27px;
+  }
+}
+
+
+/* =====================================================
+   1200px
+===================================================== */
+
+@media (max-width: 1400px) and (min-width: 1001px) {
+
+  .ideal-space-top {
+    grid-template-columns: 46% 54%;
+
+    padding-top: 50px;
+  }
+
+  .ideal-space-title {
+    padding-left: 22%;
+  }
+
+  .ideal-space-title h2 {
+    font-size: 32px;
+  }
+
+  .ideal-space-description {
+    padding-top: 12px;
+    padding-right: 6%;
+  }
+
+  .ideal-space-description p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .ideal-space-image {
+    height: 555px;
+  }
+
+  .ideal-space-newsletter {
+    right: 6%;
+
+    width: 50%;
+
+    padding: 27px;
+  }
+
+  .ideal-space-newsletter h3 {
+    font-size: 25px;
+  }
+
+  .ideal-space-newsletter p {
+    font-size: 11px;
+  }
+}
+
+
+/* =====================================================
+   1024px
+===================================================== */
+
+@media (max-width: 1000px) and (min-width: 851px) {
+
+  .ideal-space-top {
+    grid-template-columns: 46% 54%;
+
+    padding-top: 40px;
+  }
+
+  .ideal-space-title {
+    padding-left: 8%;
+  }
+
+  .ideal-space-title h2 {
+    font-size: 31px;
+  }
+
+  .ideal-space-description {
+    padding-top: 10px;
+    padding-right: 5%;
+  }
+
+  .ideal-space-description p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .ideal-space-image {
+    height: 475px;
+  }
+
+  .ideal-space-newsletter {
+    right: 0;
+    bottom: 0;
+
+    width: 54%;
+
+    padding: 27px;
+  }
+
+  .ideal-space-newsletter h3 {
+    font-size: 24px;
+  }
+
+  .ideal-space-newsletter p {
+    font-size: 11px;
+  }
+
+  .ideal-space-form input {
+    height: 38px;
+  }
+
+  .ideal-space-form button {
+    height: 38px;
+  }
+}
+
+
+/* =====================================================
+   768px
+   TOP CONTENT + IMAGE + NEWSLETTER
+===================================================== */
+
+@media (max-width: 850px) {
+
+  .ideal-space-top {
+    display: block;
+
+    width: 100%;
+
+    padding: 45px 16px 24px;
+  }
+
+  .ideal-space-title {
+    padding: 0;
+  }
+
+  .ideal-space-title h2 {
+    font-size: 32px;
+    line-height: 1.18;
+  }
+
+  .ideal-space-description {
+    padding: 25px 0 0;
+  }
+
+  .ideal-space-description p {
+    max-width: none;
+
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .ideal-space-image {
+    width: 100%;
+    height: 400px;
+  }
+
+  .ideal-space-newsletter {
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+
+    width: calc(100% - 32px);
+
+    margin: -90px 16px 0;
+    padding: 28px;
+
+    border-radius: 10px;
+  }
+
+  .ideal-space-newsletter h3 {
+    font-size: 25px;
+  }
+
+  .ideal-space-newsletter p {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+}
+
+
+/* =====================================================
+   600px
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .ideal-space-top {
+    padding: 35px 16px 22px;
+  }
+
+  .ideal-space-title h2 {
+    font-size: 28px;
+  }
+
+  .ideal-space-description {
+    padding-top: 20px;
+  }
+
+  .ideal-space-description p {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .ideal-space-image {
+    height: 330px;
+  }
+
+  .ideal-space-newsletter {
+    width: calc(100% - 24px);
+
+    margin: -65px 12px 0;
+
+    padding: 24px 18px;
+  }
+
+  .ideal-space-newsletter h3 {
+    font-size: 23px;
+  }
+
+  .ideal-space-newsletter p {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .ideal-space-form input {
+    height: 40px;
+  }
+
+  .ideal-space-form button {
+    flex-basis: 92px;
+
+    height: 40px;
+  }
+}
+
+
+/* =====================================================
+   425px
+===================================================== */
+
+@media (max-width: 450px) {
+
+  .ideal-space-top {
+    padding: 35px 16px 20px;
+  }
+
+  .ideal-space-title h2 {
+    font-size: 27px;
+    line-height: 1.18;
+  }
+
+  .ideal-space-description {
+    padding-top: 20px;
+  }
+
+  .ideal-space-description p {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .ideal-space-image {
+    height: 330px;
+  }
+
+  .ideal-space-newsletter {
+    width: calc(100% - 24px);
+
+    margin: -65px 12px 0;
+
+    padding: 25px 16px;
+
+    border-radius: 9px;
+  }
+
+  .ideal-space-newsletter h3 {
+    margin-bottom: 14px;
+
+    text-align: center;
+
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  .ideal-space-newsletter p {
+    margin-bottom: 18px;
+
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .ideal-space-form {
+    display: block;
+
+    border-radius: 8px;
+    
+  }
+
+  .ideal-space-form input {
+    display: block;
+
+    width: 100%;
+    height: 43px;
+  
+    padding: 0 13px;
+    
+  }
+
+  .ideal-space-form button {
+    display: block;
+
+    width: 100%;
+    height: 41px;
+
+    border-top: 1px solid #ffe4d2;
+
+  }
+}
+
+
+/* =====================================================
+   360px
+===================================================== */
+
+@media (max-width: 360px) {
+
+  .ideal-space-top {
+    padding: 32px 14px 18px;
+  }
+
+  .ideal-space-title h2 {
+    font-size: 25px;
+  }
+
+  .ideal-space-description {
+    padding-top: 18px;
+  }
+
+  .ideal-space-description p {
+    font-size: 11px;
+  }
+
+  .ideal-space-image {
+    height: 300px;
+  }
+
+  .ideal-space-newsletter {
+    width: calc(100% - 20px);
+
+    margin: -60px 10px 0;
+
+    padding: 22px 14px;
+  }
+
+  .ideal-space-newsletter h3 {
+    font-size: 21px;
+  }
+
+  .ideal-space-newsletter p {
+    font-size: 11px;
+  }
+}
+
+
+
+@media (max-width: 1100px) and (min-width: 1001px) {
+
+  .ideal-space-title {
+    padding-left: 8px;
+  }
+
+  .ideal-space-title h2 {
+    margin-left: 8px;
+  }
+}

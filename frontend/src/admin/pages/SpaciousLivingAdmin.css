@@ -1,0 +1,378 @@
+.spacious-admin-page {
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: inherit;
+  color: #333;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.spacious-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.spacious-admin-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.spacious-admin-header p {
+  color: #666;
+  font-size: 13px;
+}
+
+.spacious-admin-header-actions,
+.spacious-admin-bottom-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.spacious-admin-bottom-actions {
+  margin-top: 30px;
+  justify-content: flex-end;
+}
+
+.spacious-save-btn {
+  background-color: #b8860b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.spacious-save-btn:hover:not(:disabled) {
+  background-color: #996f08;
+}
+
+.spacious-reset-btn {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.spacious-reset-btn:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spacious-admin-message {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.spacious-admin-error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.spacious-admin-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.spacious-admin-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 12px;
+}
+
+.spacious-admin-card-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+.spacious-admin-card-header p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.spacious-add-btn {
+  background-color: #b8860b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.spacious-add-btn:hover {
+  background-color: #996f08;
+}
+
+.spacious-section-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.spacious-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.spacious-form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.spacious-form-group input,
+.spacious-form-group textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+}
+
+.spacious-form-group input:focus,
+.spacious-form-group textarea:focus {
+  border-color: #b8860b;
+}
+
+.spacious-form-group small {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.spacious-main-image-preview {
+  width: 140px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 8px;
+}
+
+.spacious-pagination-result {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+/* ==========================================
+   4-COLUMN GRID LAYOUT FOR SLIDER PROPERTIES
+   ================================---------- */
+.spacious-properties-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1200px) {
+  .spacious-properties-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .spacious-properties-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.spacious-property-admin-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spacious-property-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 8px;
+}
+
+.spacious-property-admin-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.spacious-delete-btn {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.spacious-delete-btn:hover {
+  background-color: #fecaca;
+}
+
+.spacious-property-admin-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.spacious-property-admin-image {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.spacious-property-admin-image img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.spacious-property-admin-image input[type="file"] {
+  font-size: 11px;
+}
+
+.spacious-property-admin-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.spacious-property-admin-fields input,
+.spacious-property-admin-fields textarea {
+  padding: 6px 8px;
+  font-size: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.spacious-property-admin-fields label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.spacious-subimage-grid {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.spacious-subimage-item {
+  position: relative;
+  width: 45px;
+  height: 45px;
+}
+
+.spacious-subimage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+}
+
+.spacious-subimage-item button {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.spacious-empty-property {
+  text-align: center;
+  padding: 30px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* ==========================================
+   PAGINATION STYLING (MATCHING SCREENSHOT)
+   ================================---------- */
+.spacious-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 24px;
+}
+
+.spacious-pagination button {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.spacious-pagination button:hover:not(:disabled) {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.spacious-pagination button.active {
+  background: #d97706;
+  color: #ffffff;
+  border-color: #d97706;
+}
+
+.spacious-pagination button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

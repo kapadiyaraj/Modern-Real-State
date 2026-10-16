@@ -1,0 +1,607 @@
+:root {
+  --pen-bg: #f7f7f8;
+  --pen-surface: #ffffff;
+  --pen-surface-soft: #fbfbfc;
+  --pen-border: #e5e7eb;
+  --pen-text: #16181d;
+  --pen-text-muted: #6b7280;
+  --pen-gold: #b8894f;
+  --pen-gold-soft: #f6ead9;
+  --pen-danger: #d64545;
+  --pen-danger-soft: #fbe7e7;
+  --pen-radius: 14px;
+  --pen-shadow: 0 4px 16px rgba(16, 24, 40, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.penthouse-admin {
+  min-height: 100vh;
+  background: var(--pen-bg);
+  color: var(--pen-text);
+  padding: 32px 20px 80px;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.penthouse-admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: var(--pen-surface);
+  border: 1px solid var(--pen-border);
+  border-radius: var(--pen-radius);
+  padding: 24px 28px;
+  box-shadow: var(--pen-shadow);
+}
+
+.penthouse-admin-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--pen-gold);
+  display: block;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.penthouse-admin-header h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.penthouse-admin-header > div:first-child > p {
+  margin: 0;
+  color: var(--pen-text-muted);
+  font-size: 14px;
+}
+
+/* BUTTONS (shared) */
+
+.penthouse-view-all-btn,
+.penthouse-reset-btn,
+.penthouse-add-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 11px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.penthouse-view-all-btn {
+  background: var(--pen-gold);
+  color: #fff;
+}
+
+.penthouse-reset-btn {
+  background: var(--pen-danger-soft);
+  color: var(--pen-danger);
+}
+
+.penthouse-add-btn {
+  background: var(--pen-gold-soft);
+  color: var(--pen-gold);
+}
+
+.penthouse-view-all-btn:hover,
+.penthouse-reset-btn:hover,
+.penthouse-add-btn:hover {
+  opacity: 0.85;
+}
+
+/* LEFT IMAGE CARD */
+
+.penthouse-left-image-card {
+  background: var(--pen-surface);
+  border: 1px solid var(--pen-border);
+  border-radius: var(--pen-radius);
+  padding: 24px 28px;
+  box-shadow: var(--pen-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.penthouse-left-image-content h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.penthouse-left-image-content p {
+  margin: 0;
+  color: var(--pen-text-muted);
+  font-size: 13px;
+  max-width: 420px;
+  line-height: 1.5;
+}
+
+.penthouse-left-image-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.penthouse-upload-btn {
+  background: var(--pen-gold);
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.penthouse-upload-btn input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.penthouse-reset-image-btn {
+  background: var(--pen-bg);
+  border: 1px solid var(--pen-border);
+  color: var(--pen-text-muted);
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.penthouse-reset-image-btn:hover {
+  color: var(--pen-gold);
+  border-color: var(--pen-gold);
+}
+
+.penthouse-left-image-preview {
+  width: 180px;
+  height: 110px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--pen-border);
+  flex-shrink: 0;
+}
+
+.penthouse-left-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* FORM CARD */
+
+.penthouse-admin-form-card {
+  background: var(--pen-surface);
+  border: 1px solid var(--pen-border);
+  border-radius: var(--pen-radius);
+  padding: 28px;
+  box-shadow: var(--pen-shadow);
+}
+
+.penthouse-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.penthouse-card-title .penthouse-admin-label {
+  margin-bottom: 4px;
+}
+
+.penthouse-card-title h2 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.penthouse-form-cancel-top {
+  background: var(--pen-danger-soft);
+  color: var(--pen-danger);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.penthouse-form-cancel-top:hover {
+  opacity: 0.85;
+}
+
+.penthouse-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.penthouse-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.penthouse-full {
+  grid-column: 1 / -1;
+}
+
+.penthouse-form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--pen-text-muted);
+}
+
+.penthouse-form-group input[type="text"],
+.penthouse-form-group select,
+.penthouse-form-group textarea {
+  background: var(--pen-bg);
+  border: 1px solid var(--pen-border);
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-size: 14px;
+  color: var(--pen-text);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  font-family: inherit;
+}
+
+.penthouse-form-group input[type="text"]:focus,
+.penthouse-form-group select:focus,
+.penthouse-form-group textarea:focus {
+  border-color: var(--pen-gold);
+  box-shadow: 0 0 0 3px var(--pen-gold-soft);
+}
+
+.penthouse-form-group textarea {
+  resize: vertical;
+}
+
+.penthouse-form-group input[type="file"] {
+  font-size: 13px;
+  color: var(--pen-text-muted);
+}
+
+.penthouse-form-group small {
+  color: var(--pen-text-muted);
+  font-size: 12px;
+}
+
+/* IMAGE PREVIEW */
+
+.penthouse-image-preview-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.penthouse-image-preview-item {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--pen-border);
+}
+
+.penthouse-image-preview-item.main {
+  border-color: var(--pen-gold);
+  box-shadow: 0 0 0 2px var(--pen-gold-soft);
+}
+
+.penthouse-image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.penthouse-image-preview-item span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  padding: 2px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.penthouse-remove-image-btn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--pen-danger);
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* FORM BUTTONS */
+
+.penthouse-form-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.penthouse-save-btn,
+.penthouse-cancel-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.penthouse-save-btn {
+  background: var(--pen-gold);
+  color: #fff;
+}
+
+.penthouse-save-btn:disabled,
+.penthouse-cancel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.penthouse-cancel-btn {
+  background: var(--pen-bg);
+  border: 1px solid var(--pen-border);
+  color: var(--pen-text-muted);
+}
+
+.penthouse-save-btn:hover,
+.penthouse-cancel-btn:hover {
+  opacity: 0.85;
+}
+
+/* LIST / TABLE */
+
+.penthouse-list-card {
+  background: var(--pen-surface);
+  border: 1px solid var(--pen-border);
+  border-radius: var(--pen-radius);
+  padding: 24px 24px 8px;
+  box-shadow: var(--pen-shadow);
+}
+
+.penthouse-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.penthouse-list-header h2 {
+  margin: 4px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.penthouse-section-subtitle {
+  margin: 0;
+  color: var(--pen-text-muted);
+  font-size: 13px;
+}
+
+.penthouse-table-wrap {
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+.penthouse-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.penthouse-table thead th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--pen-text-muted);
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--pen-border);
+}
+
+.penthouse-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid var(--pen-border);
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.penthouse-table tbody tr:hover {
+  background: var(--pen-surface-soft);
+}
+
+.penthouse-table tbody td img {
+  border: 1px solid var(--pen-border);
+  background: var(--pen-bg);
+}
+
+.penthouse-property-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.penthouse-property-info strong {
+  font-size: 14px;
+  color: var(--pen-text);
+}
+
+.penthouse-property-info small {
+  color: var(--pen-text-muted);
+  font-size: 12px;
+}
+
+.penthouse-cat-badge {
+  background: var(--pen-surface-soft);
+  border: 1px solid var(--pen-border);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: var(--pen-text-muted);
+  white-space: nowrap;
+}
+
+.penthouse-price-display {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.penthouse-price-display strong {
+  color: var(--pen-gold);
+  font-size: 14px;
+}
+
+.penthouse-price-display del {
+  color: var(--pen-text-muted);
+  font-size: 12px;
+}
+
+.penthouse-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.penthouse-edit-btn,
+.penthouse-delete-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.penthouse-edit-btn {
+  background: var(--pen-gold-soft);
+  color: var(--pen-gold);
+}
+
+.penthouse-delete-btn {
+  background: var(--pen-danger-soft);
+  color: var(--pen-danger);
+}
+
+.penthouse-edit-btn:hover,
+.penthouse-delete-btn:hover {
+  opacity: 0.8;
+}
+
+.penthouse-empty {
+  text-align: center;
+  color: var(--pen-text-muted);
+  padding: 30px 0 !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .penthouse-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .penthouse-admin-header,
+  .penthouse-left-image-card,
+  .penthouse-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .penthouse-view-all-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .penthouse-left-image-preview {
+    width: 100%;
+    height: 160px;
+  }
+
+  .penthouse-left-image-actions {
+    width: 100%;
+  }
+
+  .penthouse-upload-btn,
+  .penthouse-reset-image-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .penthouse-form-buttons {
+    flex-direction: column;
+  }
+
+  .penthouse-save-btn,
+  .penthouse-cancel-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .penthouse-admin {
+    padding: 20px 14px 60px;
+  }
+
+  .penthouse-admin-header,
+  .penthouse-left-image-card,
+  .penthouse-admin-form-card,
+  .penthouse-list-card {
+    padding: 18px;
+  }
+
+  .penthouse-admin-header h1 {
+    font-size: 21px;
+  }
+}

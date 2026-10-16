@@ -1,0 +1,584 @@
+/* =========================================
+   SUB ADMIN KYC PAGE
+========================================= */
+
+.subadmin-kyc-page {
+  min-height: 100vh;
+  background: #f5f7f9;
+  color: #17232a;
+  padding: 40px 30px 70px;
+  box-sizing: border-box;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.subadmin-kyc-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.subadmin-kyc-loading {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f7f9;
+
+  color: #17232a;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.subadmin-kyc-header {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 22px;
+
+  margin-bottom: 25px;
+}
+
+.subadmin-kyc-header > button {
+  flex-shrink: 0;
+
+  border: 1px solid #dfe4e7;
+  background: #ffffff;
+
+  color: #17232a;
+
+  padding: 10px 15px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.subadmin-kyc-header > button:hover {
+  background: #17232a;
+  color: #ffffff;
+}
+
+.subadmin-kyc-header > div {
+  flex: 1;
+}
+
+.subadmin-kyc-header span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #909ba1;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+.subadmin-kyc-header h1 {
+  margin: 0;
+
+  color: #17232a;
+
+  font-size: 28px;
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.subadmin-kyc-header p {
+  margin: 8px 0 0;
+
+  color: #78848a;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.subadmin-kyc-status {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  margin-bottom: 20px;
+
+  padding: 17px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e7e9;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.subadmin-kyc-status > div {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.subadmin-kyc-status strong {
+  color: #17232a;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.subadmin-kyc-status span {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 85px;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-transform: capitalize;
+}
+
+/* Pending */
+
+.subadmin-kyc-status.pending span {
+  background: #fff6df;
+  color: #a66b00;
+}
+
+/* Approved */
+
+.subadmin-kyc-status.approved span {
+  background: #eaf8ef;
+  color: #238247;
+}
+
+/* Rejected */
+
+.subadmin-kyc-status.rejected span {
+  background: #fff0ef;
+  color: #c34f46;
+}
+
+/* Not submitted */
+
+.subadmin-kyc-status.not_submitted span {
+  background: #eef1f3;
+  color: #65727a;
+}
+
+.subadmin-kyc-status p {
+  margin: 0;
+
+  color: #c34f46;
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.subadmin-kyc-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.subadmin-kyc-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e6e8;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.subadmin-kyc-card-title {
+  padding: 17px 20px;
+
+  border-bottom: 1px solid #e6e9eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.subadmin-kyc-card-title h2 {
+  margin: 0;
+
+  color: #17232a;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.subadmin-kyc-card-title p {
+  margin: 0;
+
+  color: #89939a;
+
+  font-size: 10px;
+}
+
+/* =========================================
+   CARD BODY
+========================================= */
+
+.subadmin-kyc-card-body {
+  padding: 22px 20px 25px;
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.subadmin-kyc-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+/* =========================================
+   FIELD
+========================================= */
+
+.subadmin-kyc-field {
+  min-width: 0;
+}
+
+.subadmin-kyc-field.full {
+  grid-column: 1 / -1;
+}
+
+.subadmin-kyc-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #29373e;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.subadmin-kyc-field input,
+.subadmin-kyc-field select,
+.subadmin-kyc-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d9dfe2;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  color: #17232a;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.subadmin-kyc-field input,
+.subadmin-kyc-field select {
+  height: 40px;
+
+  padding: 0 12px;
+}
+
+.subadmin-kyc-field textarea {
+  min-height: 90px;
+
+  padding: 11px 12px;
+
+  resize: vertical;
+}
+
+.subadmin-kyc-field input:focus,
+.subadmin-kyc-field select:focus,
+.subadmin-kyc-field textarea:focus {
+  border-color: #17232a;
+
+  box-shadow:
+    0 0 0 2px
+    rgba(23, 35, 42, 0.06);
+}
+
+.subadmin-kyc-field input::placeholder,
+.subadmin-kyc-field textarea::placeholder {
+  color: #a5adb2;
+}
+
+/* =========================================
+   FILE / DOCUMENT FIELDS
+========================================= */
+
+.subadmin-kyc-field input[type="file"] {
+  height: auto;
+
+  min-height: 40px;
+
+  padding: 8px 10px;
+
+  cursor: pointer;
+}
+
+.subadmin-kyc-field input[type="file"]::file-selector-button {
+  border: 0;
+
+  background: #17232a;
+  color: #ffffff;
+
+  padding: 6px 10px;
+
+  margin-right: 10px;
+
+  border-radius: 4px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   SUBMIT
+========================================= */
+
+.subadmin-kyc-submit {
+  display: flex;
+
+  justify-content: flex-end;
+
+  padding-top: 3px;
+}
+
+.subadmin-kyc-submit button {
+  min-width: 170px;
+
+  height: 43px;
+
+  padding: 0 22px;
+
+  border: 0;
+
+  border-radius: 22px;
+
+  background: #17232a;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.subadmin-kyc-submit button:hover {
+  background: #0b151b;
+
+  transform: translateY(-1px);
+}
+
+.subadmin-kyc-submit button:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+.subadmin-kyc-submit button span {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* =========================================
+   APPROVED MESSAGE
+========================================= */
+
+.subadmin-kyc-status.approved {
+  border-color: #cdebd7;
+  background: #fbfffc;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+  .subadmin-kyc-page {
+    padding: 30px 20px 60px;
+  }
+
+  .subadmin-kyc-container {
+    max-width: 100%;
+  }
+
+  .subadmin-kyc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subadmin-kyc-field.full {
+    grid-column: auto;
+  }
+
+  .subadmin-kyc-status {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .subadmin-kyc-page {
+    padding: 20px 13px 45px;
+  }
+
+  .subadmin-kyc-header {
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-bottom: 20px;
+  }
+
+  .subadmin-kyc-header > button {
+    align-self: flex-start;
+  }
+
+  .subadmin-kyc-header h1 {
+    font-size: 23px;
+  }
+
+  .subadmin-kyc-header p {
+    font-size: 11px;
+  }
+
+  .subadmin-kyc-status {
+    padding: 15px;
+
+    border-radius: 7px;
+  }
+
+  .subadmin-kyc-status > div {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .subadmin-kyc-card-title {
+    padding: 15px;
+  }
+
+  .subadmin-kyc-card-title h2 {
+    font-size: 13px;
+  }
+
+  .subadmin-kyc-card-title p {
+    display: none;
+  }
+
+  .subadmin-kyc-card-body {
+    padding: 18px 15px 20px;
+  }
+
+  .subadmin-kyc-grid {
+    gap: 15px;
+  }
+
+  .subadmin-kyc-field input,
+  .subadmin-kyc-field select {
+    height: 42px;
+  }
+
+  .subadmin-kyc-submit {
+    width: 100%;
+  }
+
+  .subadmin-kyc-submit button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+.hero-container {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 82px);
+  background-color: #0e141b;
+  color: #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Left Image Section */
+.hero-image-wrapper {
+  flex: 1.25;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+/* Hotspots (+) */
+.hotspot {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(220, 200, 180, 0.65);
+  backdrop-filter: blur(4px);
+  border: none;
+  color: #12181f;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hotspot:hover {
+  transform: scale(1.15);
+}
+
+.hotspot-1 {
+  top: 42%;
+  left: 41%;
+}
+
+.hotspot-2 {
+  top: 63%;
+  left: 25%;
+}
+
+/* Bottom Left Card Overlay */
+.hero-bottom-card {
+  max-width: 420px;
+  background: rgba(15, 20, 26, 0.45);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 20px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-number-badge {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.card-description {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #c0c4cc;
+}
+
+/* Right Content Panel */
+.hero-content-panel {
+  flex: 1;
+  background-color: #11171f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 70px;
+  position: relative;
+}
+
+.content-inner {
+  max-width: 520px;
+}
+
+.location-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e5e3dc;
+  font-size: 13.5px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.pin-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.hero-heading {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.hero-text {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #9ca3af;
+  margin-bottom: 36px;
+}
+
+/* CTA Pill Button */
+.cta-btn {
+  display: inline-block;
+  background-color: #fceee9;
+  color: #11171f;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+/* Slider Navigation */
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 60px;
+  
+}
+
+.slider-arrow {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  width: 42px;
+  height: 28px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.slider-arrow:hover {
+  border-color: #ffffff;
+}
+
+.slider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D4AF37
+  /* border-bottom: 1px solid #D4AF37; */
+}
+
+/* Floating Privacy Policy Banner */
+.privacy-card {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background-color: #06090c;
+  padding: 20px 24px;
+  border-radius: 16px;
+  max-width: 280px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.privacy-text {
+  font-size: 12.5px;
+  line-weight: 1.5;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.privacy-btn {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.privacy-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Support */
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-image-wrapper {
+    min-height: 450px;
+  }
+
+  .hero-content-panel {
+    padding: 40px 24px;
+  }
+
+  .hero-heading {
+    font-size: 28px;
+  }
+}
+
+
+/* ---------------- TABLET SCALING (Between 1024px and 768px) ---------------- */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero-container {
+    flex-direction: row !important; /* Keep Side-by-Side Horizontal Layout */
+    min-height: 500px;
+  }
+
+  .hero-image-wrapper {
+    flex: 1; /* Shrink Image Proportionately */
+    padding: 20px;
+  }
+
+  .hero-content-panel {
+    flex: 1; /* Shrink Text Panel Proportionately */
+    padding: 30px 24px;
+  }
+
+  .hero-heading {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .hero-text {
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .hero-bottom-card {
+    max-width: 280px;
+    padding: 12px;
+  }
+
+  .privacy-card {
+    max-width: 220px;
+    padding: 12px;
+    bottom: 12px;
+    right: 12px;
+  }
+}
+
+/* ---------------- MOBILE RESPONSIVE (Strictly Below 768px) ---------------- */
+@media (max-width: 767px) {
+  .hero-container {
+    flex-direction: column !important; /* Text moves BELOW Image only here */
+  }
+
+  .hero-image-wrapper {
+    min-height: 380px;
+    width: 100%;
+  }
+
+  .hero-content-panel {
+    width: 100%;
+    padding: 32px 20px;
+  }
+
+  .hero-heading {
+    font-size: 26px;
+  }
+}
+
+
+
+/* Slider Navigation Controls */
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.slider-arrow {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  width: 42px;
+  height: 28px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.slider-arrow:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dynamic Line Progress Indicator */
+.slider-line-container {
+  flex: 1;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.slider-line-progress {
+  height: 100%;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
