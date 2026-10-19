@@ -1,0 +1,101 @@
+
+/* Recently Viewed Products swiper */
+.recent-slider-wrap {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.recently-viewed .recent-grid {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 4px 1px 12px;
+  box-sizing: border-box;
+}
+
+.recently-viewed .recent-grid::-webkit-scrollbar { display: none; }
+
+.recently-viewed .recent-card {
+  position: relative;
+  flex: 0 0 calc((100% - 60px) / 4);
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  scroll-snap-align: start;
+  border: 1px solid rgba(255,255,255,.65);
+  border-radius: 12px;
+  background: transparent;
+}
+
+.recently-viewed .recent-image {
+  width: 100%;
+  aspect-ratio: 1.18 / 1;
+  overflow: hidden;
+}
+
+.recently-viewed .recent-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.recently-viewed .recent-card:hover .recent-image img { transform: scale(1.04); }
+
+.recently-viewed .recent-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 14px 15px;
+}
+
+.recently-viewed .recent-content h3 { margin: 0; }
+.recently-viewed .recent-content del { opacity: .65; font-size: .9em; }
+
+.recent-slider-arrow {
+  position: absolute;
+  top: 34%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: #111d23;
+  color: #fff;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(0,0,0,.18);
+  transition: background .2s ease, transform .2s ease;
+}
+
+.recent-slider-arrow:hover { background: #263b45; transform: scale(1.04); }
+.recent-slider-arrow-left { left: 0; }
+.recent-slider-arrow-right { right: 0; }
+
+@media (max-width: 900px) {
+  .recently-viewed .recent-card { flex-basis: calc((100% - 40px) / 3); }
+}
+@media (max-width: 650px) {
+  .recently-viewed .recent-card { flex-basis: calc((100% - 20px) / 2); }
+  .recent-slider-arrow { width: 38px; height: 38px; font-size: 22px; }
+}
+@media (max-width: 420px) {
+  .recently-viewed .recent-card { flex-basis: 85%; }
+}
